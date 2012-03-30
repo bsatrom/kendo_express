@@ -1,0 +1,21 @@
+extends layout
+
+block stylesheets
+	link(rel='stylesheet', href='../stylesheets/lib/kendo/kendo.common.min.css')	
+	link(rel='stylesheet', href='../stylesheets/lib/kendo/kendo.default.min.css')
+
+block scripts 
+	script(src="../javascripts/require-jquery.js", data-main="javascripts/index/index")
+
+block content
+	div(class="hero-unit")
+		h2 Get Your Kendo UI Green Belt in Minutes.
+		br
+
+		p Bold, awesome description here
+		p
+			a(class="btn btn-primary btn-large", href="/about") Learn More &raquo;
+			a(class="btn btn-secondary btn-large", href="/dojo") Enter the Dojo! &raquo;
+
+		p 
+			input(type="text", id="autocomplete")
